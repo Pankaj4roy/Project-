@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="image"><img class="blue" src="download.png" /></div>
+    <div class="task-details">
+      <div class="div">
+        <div class="overlap">
+          <!-- Your existing content -->
+          <div class="text-wrapper">
+            <h3>Create Architectural Concepts</h3>
+          </div>
+          <div class="text-wrapper-11">New York High Rise</div>
+          <div class="text-wrapper-12">Suzette Goldstein</div>
+        
+          <!-- Button to trigger the edit form -->
+          <div class="overlap-group">
+            <div class="text-wrapper-14" onclick="showEditForm()">Edit Task</div>
+          </div>
+        
+          <!-- Add your other content -->
+        
+          <!-- Your edit form (make sure it's hidden initially) -->
+          <div id="editTaskForm" style="display: none;">
+            <label  class="title"for="editedTitle">Title:</label>
+            <input type="text" id="editedTitle" />
+        <label for="assign">Assign to</label>
+        <input type="text" name="" id="assign">
+            <label for="editedProject">Project:</label>
+            <input type="text" id="editedProject" />
+        
+            <!-- Add other fields as needed -->
+        
+            <button onclick="updateTask()">Save Changes</button>
+          </div>
+        
+          <script>
+            function showEditForm() {
+              // Assume you have a form with ID 'editTaskForm'
+              document.getElementById('editTaskForm').style.display = 'block';
+        
+              // Populate the form with existing values
+              const title = document.querySelector('.text-wrapper').textContent;
+              const project = document.querySelector('.text-wrapper-11').textContent;
+        
+              document.getElementById('editedTitle').value = title;
+              document.getElementById('editedProject').value = project;
+            }
+        
+            function updateTask() {
+              // Get updated values from the form
+              const updatedTitle = document.getElementById('editedTitle').value;
+              const updatedProject = document.getElementById('editedProject').value;
+        
+              // Update existing values on the page
+              document.querySelector('.text-wrapper').textContent = updatedTitle;
+              document.querySelector('.text-wrapper-11').textContent = updatedProject;
+        
+              // Hide the edit form
+              document.getElementById('editTaskForm').style.display = 'none';
+            }
+          </script>
+        </div>
+        
+        <div class="overlap-4">
+          <div class="text-wrapper-18">Title</div>
+          <div class="text-wrapper-19">Owner</div>
+          <div class="text-wrapper-20">Last Modified</div>
+          <div class="text-wrapper-21">File Size</div>
+          <div class="text-wrapper-22">Documents:</div>
+          <div class="overlap-5">
+            <div class="text-wrapper-23">Architectural Concepts Draft 1</div>
+            <div class="text-wrapper-24">08/27/2023</div>
+            <div class="text-wrapper-25">2 MB</div>
+            <img class="screenshot" src="profile-picture-for-social-network-svgrepo-com.svg" />
+            <div class="solid-document-wrapper"><img class="solid-document" src="img/document-layout-left.svg" /></div>
+          </div>
+          <div class="overlap-6">
+            <div class="text-wrapper-26">Attach Files</div>
+            <img class="solid-paperclip" src="img/paperclip.svg" />
+          </div>
+        </div>
+        <div class="overlap-7">
+          <img class="line" src="img/line-205.svg" />
+          <div class="text-wrapper-27">Post an Update:</div>
+          <div class="text-wrapper-28">Update Status:</div>
+          <div class="overlap-8"><div class="text-wrapper-29">Post Update</div></div>
+          <div class="rectangle"></div>
+          <div class="overlap-9"><div class="text-wrapper-30">Stuck</div></div>
+          <div class="overlap-10"><div class="text-wrapper-30">Complete</div></div>
+          <div class="overlap-11"><div class="text-wrapper-31">Not Started</div></div>
+          <div class="overlap-12"><div class="text-wrapper-17">In Progress</div></div>
+        </div>
+        <div class="overlap-13">
+          <div class="text-wrapper-27">Activity:</div>
+          <div class="text-wrapper-32">Suzette Goldstein</div>
+          <div class="text-wrapper-33">Suzette Goldstein</div>
+          <div class="text-wrapper-34">Brian Jenek</div>
+          <div class="text-wrapper-35">Created this task</div>
+          <div class="text-wrapper-36">Submitted a document</div>
+          <div class="text-wrapper-37">08/24/2023</div>
+          <div class="text-wrapper-38">09/06/2023</div>
+          <div class="text-wrapper-39">08/26/2023</div>
+          <p class="p">Marked this task In Progress</p>
+        </div>
+        <p class="text-wrapper-40">New York High Rise / Task</p>
+        <div class="group">
+          <div class="overlap-group-2">
+            <img class="user-interface-bolt" src="lightning-1-svgrepo-com.svg" />
+            <div class="overlap-14">
+              <div  class="text-wrapper-41">Projects</div>
+              <img class="user-interface" src="star-svgrepo-com.svg" />
+            </div>
+            <img class="user-interface-house" src="house-svgrepo-com.svg" />
+            <div class="text-wrapper-42">Home</div>
+            <img class="users-users" src="users-svgrepo-com.svg" />
+            <div class="text-wrapper-43">People</div>
+            <div class="text-wrapper-44">Hiring</div>
+            <img class="briefcase" src="briefcase-svgrepo-com.svg" />
+            <img class="img" src="settings-2-svgrepo-com.svg" />
+            <div class="text-wrapper-45">Settings</div>
+            <div class="text-wrapper-46">Tasks</div>
+          </div>
+        </div>
+        <div class="overlap-wrapper">
+          <div class="overlap-15">
+            <img class="blue" src="img/blue-4.png" />
+            <div class="text-wrapper-47">Archslate</div>
+            <div class="overlap-group-3">
+              <img class="search" src="search-svgrepo-com.svg" />
+              <div class="text-wrapper-48">Search</div>
+            </div>
+            <img class="screenshot-2" src="img/screenshot-2023-07-25-at-6-33-8.png" />
+            <img class="arrows-right-arrow" src="dropdown-arrow-svgrepo-com.svg" />
+            <div class="text-wrapper-49">Suzette Goldstein</div>
+            <div class="text-wrapper-50">Admin</div>
+          </div>
+        </div>
+        <img class="arrows-right-arrow-2" src="img/image.svg" />
+        <img class="arrows-right-arrow-3" src="img/image.svg" />
+        <img class="bell" src="bell-svgrepo-com.svg" />
+      </div>
+    </div>
+    <!-- Assuming you have a container for the edit form -->
+<div id="editTaskForm" style="display: none;">
+  <label for="title">Title:</label>
+  <input type="text" id="title" />
+
+  <label for="owner">Owner:</label>
+  <input type="text" id="owner" />
+
+  <!-- Add other fields as needed -->
+
+  <button onclick="updateTask()">Save Changes</button>
+</div>
+
+<!-- Your existing task details -->
+<div class="text-wrapper">Create Architectural Concepts</div>
+<div class="text-wrapper-11">New York High Rise</div>
+<div class="text-wrapper-12">Suzette Goldstein</div>
+
+<!-- Button to trigger edit -->
+<button onclick="showEditForm()">Edit Task</button>
+
+<script>
+// Function to show the edit form
+function showEditForm() {
+  // Get existing details
+  const title = document.querySelector('.text-wrapper').textContent;
+  const owner = document.querySelector('.text-wrapper-12').textContent;
+
+  // Populate form fields
+  document.getElementById('title').value = title;
+  document.getElementById('owner').value = owner;
+
+  // Show the form
+  document.getElementById('editTaskForm').style.display = 'block';
+}
+
+// Function to update task details
+function updateTask() {
+  // Get updated details from form
+  const updatedTitle = document.getElementById('title').value;
+  const updatedOwner = document.getElementById('owner').value;
+
+  // Update existing details on the page
+  document.querySelector('.text-wrapper').textContent = updatedTitle;
+  document.querySelector('.text-wrapper-12').textContent = updatedOwner;
+
+  // Hide the edit form
+  document.getElementById('editTaskForm').style.display = 'none';
+}
+</script>
+
+  </body>
+</html>
